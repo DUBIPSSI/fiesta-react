@@ -1,0 +1,17 @@
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    background-color: royalblue;
+}
