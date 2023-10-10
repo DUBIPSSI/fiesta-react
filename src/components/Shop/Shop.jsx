@@ -22,7 +22,7 @@ function Shop() {
                         {cart.map(item => (
                             <div className="cart-item" key={item.id}>
                                 <span>{item.title} - {item.price}€ x {item.quantity}</span>
-                                <button onClick={() => removeFromCart(item.id)} class="panierButton">Supprimer</button>
+                                <button onClick={() => removeFromCart(item.id)} className="panierButton">Supprimer</button>
                             </div>
                         ))}
                     </div>
