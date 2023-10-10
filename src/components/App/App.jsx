@@ -6,6 +6,9 @@ import Layout from '../Layout/Layout';
 import Home from '../Home/Home';
 import Fiesta from '../Fiesta/Fiesta';
 import NoPage from '../NoPage/NoPage';
+import Quizz from '../Quizz/Quizz';
+import Shop from '../Shop/Shop';
+import { ShopContextProvider } from '../Shop/ShopContext';
 
 function App() {
 
@@ -17,6 +20,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/counter" element={<Counter />} />
             <Route path="/fiesta" element={<Fiesta />} />
+            <Route path="/quizz" element={<Quizz />} />
+            <Route path="/shop" element={<ShopContextProvider><Shop /></ShopContextProvider>} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
